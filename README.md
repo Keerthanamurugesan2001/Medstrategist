@@ -1,0 +1,7 @@
+## Medstrategist
+
+Medstrategist
+
+#### License
+
+mit
