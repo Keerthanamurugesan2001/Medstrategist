@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CAT-{YY}-{MM}-{####}",
+ "creation": "2024-07-15 19:05:02.166681",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "category",
+  "column_break_ssnl",
+  "lead_time_per_product",
+  "section_break_hvse",
+  "vendor_selection_criteria",
+  "section_break_ifca",
+  "status",
+  "amended_from",
+  "reference_doctype",
+  "reference_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "Mechanical\nElectrical"
+  },
+  {
+   "fieldname": "column_break_ssnl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lead_time_per_product",
+   "fieldtype": "Data",
+   "label": "Lead Time Per Product"
+  },
+  {
+   "fieldname": "section_break_hvse",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "vendor_selection_criteria",
+   "fieldtype": "Table",
+   "label": "Vendor Selection Criteria",
+   "options": "Vendor Selection Criteria Section"
+  },
+  {
+   "fieldname": "section_break_ifca",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Draft\nApproved\nRejected"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Category",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Reference Doctype",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "hidden": 1,
+   "label": "Reference Name",
+   "options": "reference_doctype"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-15 20:41:35.896128",
+ "modified_by": "Administrator",
+ "module": "Medstrategist",
+ "name": "Category",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

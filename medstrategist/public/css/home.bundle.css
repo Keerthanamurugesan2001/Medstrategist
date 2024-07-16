@@ -1,0 +1,8 @@
+body { 
+    /* font-family: 'Poppins', sans-serif !important; */
+    font-family: 'Roboto', sans-serif !important;
+    /* font-family: 'Times New Roman', sans-serif !important; */
+}
+.standard-sidebar-section.nested-container{
+    font-family: 'DM Sans', sans-serif;
+}
