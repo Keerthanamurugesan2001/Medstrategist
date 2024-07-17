@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 14:40:03.789485",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "skill_set",
+  "is_training_required",
+  "target_date",
+  "status",
+  "supporting_document"
+ ],
+ "fields": [
+  {
+   "fieldname": "skill_set",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Skill set"
+  },
+  {
+   "fieldname": "is_training_required",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Is training required",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Target date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Status"
+  },
+  {
+   "fieldname": "supporting_document",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Supporting document"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 14:43:32.866704",
+ "modified_by": "Administrator",
+ "module": "Medstrategist",
+ "name": "Employee skillset and training",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

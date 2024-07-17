@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 11:57:28.514311",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "skill_set",
+  "requirement",
+  "applicable_data",
+  "supporting_document"
+ ],
+ "fields": [
+  {
+   "fieldname": "skill_set",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Skill set"
+  },
+  {
+   "fieldname": "requirement",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Requirement"
+  },
+  {
+   "fieldname": "applicable_data",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Applicable Data",
+   "options": "Document"
+  },
+  {
+   "fieldname": "supporting_document",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Supporting Document"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 13:03:48.990651",
+ "modified_by": "Administrator",
+ "module": "Medstrategist",
+ "name": "Employee Skill Set",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

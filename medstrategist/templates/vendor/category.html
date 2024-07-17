@@ -1,0 +1,50 @@
+<style>
+    .category-body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 10px;
+    }
+    .no-category-card{
+        width: 100%;
+        background-color: #f7f9f9;
+        padding: 20px;
+        text-align: center;
+    }
+    .category-card {
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 16px;
+        margin: 10px 0;
+        background-color: #f7f9f9;
+    }
+    .category-card h3 {
+        margin-top: 0;
+        color: #333;
+    }
+    .category-card p {
+        margin: 5px 0;
+    }
+    .category-card a {
+        text-decoration: none;
+        color: #007bff;
+    }
+    .category-card a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+{% if categories|length>0 %}
+<div class="category-body">
+    {% for category in categories %}
+    <div class="category-card">
+        <h4>Part Category Id: <a href="/app/category/{{ category.name }}">{{ category.name }}</a></h4>
+        <p>Lead Time Per Product: {{ category.lead_time_per_product }}</p>
+    </div>
+    {% endfor %}
+</div>
+    
+{% else %}
+    <div class="no-category-card">
+        No  Category
+    </div>
+{% endif %}

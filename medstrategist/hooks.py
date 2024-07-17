@@ -10,7 +10,16 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/medstrategist/css/home.bundle.css"
+app_include_css = "/assets/medstrategist/css/common.bundle.css"
+app_include_js = ["/assets/medstrategist/js/workspace.js"]
+
+
+override_whitelisted_methods = {
+	"frappe.desk.desktop.get_workspace_sidebar_items": "medstrategist.medstrategist.api.get_workspace_sidebar_items"
+}
+
+doctype_list_js = {"Vendors" : "public/js/vendor_list.js"}
+
 # app_include_css = "/assets/medstrategist/css/medstrategist.css"
 # app_include_js = "/assets/medstrategist/js/medstrategist.js"
 
@@ -29,7 +38,8 @@ app_include_css = "/assets/medstrategist/css/home.bundle.css"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Employee" : "public/js/employee.js"}
+
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -116,20 +126,14 @@ app_include_css = "/assets/medstrategist/css/home.bundle.css"
 # Override standard doctype classes
 
 # override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
+# 	"EmployeeMaster": "medstrategist.medstrategist.doctype.employee.employee.CustomEmployee"
 # }
 
 # Document Events
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+
 
 # Scheduled Tasks
 # ---------------

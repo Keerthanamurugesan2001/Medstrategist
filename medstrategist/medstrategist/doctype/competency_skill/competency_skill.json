@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:skill",
+ "creation": "2024-07-16 17:14:28.089587",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "skill",
+  "role",
+  "experience",
+  "column_break_szuw",
+  "type_of_employment_applicable_for_this_role",
+  "area_of_expertise",
+  "status",
+  "column_break_vkpv",
+  "education_qualification",
+  "level",
+  "added_on",
+  "added_by",
+  "section_break_hihc",
+  "responsibility_if_any",
+  "training_and_certification",
+  "skill_set"
+ ],
+ "fields": [
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Data",
+   "label": "Experience"
+  },
+  {
+   "fieldname": "column_break_szuw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_of_employment_applicable_for_this_role",
+   "fieldtype": "Select",
+   "label": "Type of employment applicable for this role",
+   "options": "FTE\nPart Time\nContract\nTemp"
+  },
+  {
+   "fieldname": "area_of_expertise",
+   "fieldtype": "Data",
+   "label": "Area of expertise"
+  },
+  {
+   "fieldname": "column_break_vkpv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "education_qualification",
+   "fieldtype": "Data",
+   "label": "Education qualification"
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Data",
+   "label": "Level"
+  },
+  {
+   "fieldname": "section_break_hihc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "responsibility_if_any",
+   "fieldtype": "Small Text",
+   "label": "Responsibility, If any"
+  },
+  {
+   "fieldname": "training_and_certification",
+   "fieldtype": "Small Text",
+   "label": "Training and certification"
+  },
+  {
+   "fieldname": "skill_set",
+   "fieldtype": "Table",
+   "label": "Skill set",
+   "options": "Competency Skill Set"
+  },
+  {
+   "fieldname": "skill",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Skill",
+   "unique": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Approval Pending\nApproved\nRejected\nIn Progress"
+  },
+  {
+   "fieldname": "added_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Added On"
+  },
+  {
+   "fieldname": "added_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Added by"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-16 17:46:17.257344",
+ "modified_by": "Administrator",
+ "module": "Medstrategist",
+ "name": "Competency Skill",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

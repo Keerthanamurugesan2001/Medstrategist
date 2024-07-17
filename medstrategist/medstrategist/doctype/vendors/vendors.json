@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:VEN-{YY}-{MM}-{#####}",
+ "autoname": "format:VEN-{YYYY}-{MM}-{#####}",
  "creation": "2024-07-15 18:54:37.206212",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -17,17 +17,21 @@
   "contact_person_name",
   "website",
   "vendor_reference_document_number",
+  "status",
   "section_break_wqni",
   "iso_certified",
   "iso_certificate",
-  "category_section",
+  "section_break_eijt",
   "add_category",
   "categories"
  ],
  "fields": [
   {
+   "columns": 2,
    "fieldname": "vendor_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "Vendor Name"
   },
   {
@@ -47,9 +51,10 @@
    "options": "Part\nMedical Device\nServices"
   },
   {
+   "columns": 2,
    "fieldname": "contact_person_name",
    "fieldtype": "Data",
-   "label": "Contact Person Name"
+   "label": "Contact person name"
   },
   {
    "fieldname": "email",
@@ -61,8 +66,11 @@
    "fieldtype": "Column Break"
   },
   {
+   "columns": 2,
    "fieldname": "location",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "Location"
   },
   {
@@ -77,7 +85,7 @@
   {
    "fieldname": "vendor_reference_document_number",
    "fieldtype": "Data",
-   "label": "Vendor Reference Document Number"
+   "label": "Vendor reference document number"
   },
   {
    "fieldname": "section_break_wqni",
@@ -87,32 +95,42 @@
    "default": "0",
    "fieldname": "iso_certified",
    "fieldtype": "Check",
-   "label": "ISO Certified"
+   "label": "ISO certified"
   },
   {
+   "description": "Drag and Drop files, or Browse",
    "fieldname": "iso_certificate",
    "fieldtype": "Attach",
-   "label": "ISO Certificate"
+   "label": "ISO certificate"
   },
   {
    "fieldname": "add_category",
    "fieldtype": "Button",
-   "label": "Add Category"
-  },
-  {
-   "fieldname": "category_section",
-   "fieldtype": "Section Break",
-   "label": "Category"
+   "label": "Add category"
   },
   {
    "fieldname": "categories",
    "fieldtype": "HTML",
    "label": "Categories"
+  },
+  {
+   "fieldname": "section_break_eijt",
+   "fieldtype": "Section Break",
+   "label": "Category"
+  },
+  {
+   "columns": 2,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "status",
+   "options": "In Active\nActive"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-15 20:42:19.774471",
+ "modified": "2024-07-16 17:20:49.476146",
  "modified_by": "Administrator",
  "module": "Medstrategist",
  "name": "Vendors",

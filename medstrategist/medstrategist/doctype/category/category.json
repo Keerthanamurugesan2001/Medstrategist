@@ -20,9 +20,9 @@
  "fields": [
   {
    "fieldname": "category",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Category",
-   "options": "Mechanical\nElectrical"
+   "options": "Part Category"
   },
   {
    "fieldname": "column_break_ssnl",
@@ -31,7 +31,7 @@
   {
    "fieldname": "lead_time_per_product",
    "fieldtype": "Data",
-   "label": "Lead Time Per Product"
+   "label": "Lead time per product"
   },
   {
    "fieldname": "section_break_hvse",
@@ -68,21 +68,21 @@
    "fieldname": "reference_doctype",
    "fieldtype": "Link",
    "hidden": 1,
-   "label": "Reference Doctype",
+   "label": "Reference doctype",
    "options": "DocType"
   },
   {
    "fieldname": "reference_name",
    "fieldtype": "Dynamic Link",
    "hidden": 1,
-   "label": "Reference Name",
+   "label": "Reference name",
    "options": "reference_doctype"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-15 20:41:35.896128",
+ "modified": "2024-07-16 17:21:16.447382",
  "modified_by": "Administrator",
  "module": "Medstrategist",
  "name": "Category",

@@ -1,0 +1,30 @@
+@import "./home.bundle.css";
+
+
+/* .btn.btn-default.ellipsis:not(.btn-sm) {
+    background-color: var(--text-btn) !important;
+    color: #FFFFFF !important;
+    stroke: #FFFFFF;
+}
+
+.btn.btn-primary.btn-sm.primary-action{
+    background-color: var(--text-btn) !important;
+}
+
+.btn.btn-primary.btn-sm{
+    background-color: var(--text-btn) !important;
+}
+
+.level.list-row-head.text-muted{
+    background: var(--hover-color);
+}
+
+.btn.btn-default:hover {
+    background-color: var(--hover-color) !important;
+}
+/* Increasing specificity by adding more parent selectors if needed */
+/* .list-paging-area .btn-group .btn-paging.btn-info, 
+.footnote-area .btn-group .btn-paging.btn-info, 
+.btn-paging.btn-info {
+    background-color: var(--pageination-color-selected) !important;
+} */
