@@ -1,0 +1,603 @@
+{
+ "_comments": "[{\"comment\": \"<div class=\\\"ql-editor read-mode\\\"><p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p></div>\", \"by\": \"Administrator\", \"name\": \"pn6pngh1o8\"}]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-07-16 11:51:00.901619",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company_profile_tab",
+  "company_profile_section",
+  "name_of_the_organization",
+  "font_style",
+  "date_of_establishment",
+  "tax_details",
+  "sites",
+  "operations",
+  "section_break_m1ya",
+  "legal_name",
+  "official_address",
+  "contact_details",
+  "company_size",
+  "company_abbreviation",
+  "company_profile_details",
+  "section_break_j4gl",
+  "logo",
+  "section_break_f03t",
+  "admin_name",
+  "user_id",
+  "section_break_gyvg",
+  "email_id",
+  "contact",
+  "send_invite",
+  "product_details_tab",
+  "product_type",
+  "active_medical_device",
+  "tab_break_wjnj",
+  "product_category_active",
+  "section_break_porz",
+  "non_active_medical_device",
+  "column_break_9rbq",
+  "product_category_non_active",
+  "tab_break_ttvz",
+  "functions_and_departmens",
+  "tab_break_y1jt",
+  "documentation_details",
+  "organization_chart_tab",
+  "roles_section",
+  "select_country",
+  "regulations",
+  "section_break_7syd",
+  "india",
+  "indian_regulations",
+  "usamerica",
+  "usa_regulations",
+  "brasil_",
+  "brasil_regulations",
+  "indian_regulation_chacklist_section",
+  "website_link",
+  "cin",
+  "manufacturing_license",
+  "undertaking",
+  "purpose_cdsco",
+  "for_import_of_medical_device",
+  "for_clinical_investigation_of_medical_device",
+  "for_laboratory_registration",
+  "column_break_rhup",
+  "attach_oygj",
+  "attach_veig",
+  "attach_npuj",
+  "attach_tkif",
+  "attach_even",
+  "attach_yfsl",
+  "attach_clkc",
+  "attach_ghid",
+  "section_break_lpbh",
+  "name1",
+  "address",
+  "prrc",
+  "column_break_vh6o",
+  "contact_number",
+  "email",
+  "srn",
+  "notified_body_section",
+  "name_notified_name",
+  "address_notified_body",
+  "file_name",
+  "column_break_fexp",
+  "contact_number_notified_body",
+  "email_notified_body",
+  "srn_notified_body",
+  "capture_eudamed_registration_section",
+  "organization_eudamed_registration",
+  "location_and_unit_details_tab",
+  "manufacturing_unit_name",
+  "manufacturing_market_name",
+  "column_break_f7lp",
+  "location",
+  "address_of_unit",
+  "section_break_waje",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_profile_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Profile"
+  },
+  {
+   "fieldname": "name_of_the_organization",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name of the Organization"
+  },
+  {
+   "fieldname": "font_style",
+   "fieldtype": "Select",
+   "label": "Font Style",
+   "options": "\nTimes New Roman"
+  },
+  {
+   "fieldname": "date_of_establishment",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Establishment"
+  },
+  {
+   "fieldname": "tax_details",
+   "fieldtype": "Data",
+   "label": "Tax Details"
+  },
+  {
+   "fieldname": "sites",
+   "fieldtype": "Data",
+   "label": "Sites"
+  },
+  {
+   "fieldname": "operations",
+   "fieldtype": "Data",
+   "label": "Operations"
+  },
+  {
+   "fieldname": "legal_name",
+   "fieldtype": "Data",
+   "label": "Legal Name"
+  },
+  {
+   "fieldname": "official_address",
+   "fieldtype": "Data",
+   "label": "Official Address"
+  },
+  {
+   "fieldname": "contact_details",
+   "fieldtype": "Data",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "company_size",
+   "fieldtype": "Data",
+   "label": "Company Size"
+  },
+  {
+   "fieldname": "company_abbreviation",
+   "fieldtype": "Data",
+   "label": "Company Abbreviation"
+  },
+  {
+   "fieldname": "company_profile_details",
+   "fieldtype": "Data",
+   "label": "Company Profile Details"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "DOC-.YYYY.-"
+  },
+  {
+   "fieldname": "section_break_m1ya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "section_break_j4gl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_f03t",
+   "fieldtype": "Section Break",
+   "label": "Organization Admin Details"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "User ID"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "section_break_gyvg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "admin_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "company_profile_section",
+   "fieldtype": "Section Break",
+   "label": "Company Profile"
+  },
+  {
+   "fieldname": "send_invite",
+   "fieldtype": "Button",
+   "label": "Send Invite"
+  },
+  {
+   "fieldname": "product_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Product Details"
+  },
+  {
+   "fieldname": "tab_break_ttvz",
+   "fieldtype": "Tab Break",
+   "label": "Functions and Departments"
+  },
+  {
+   "fieldname": "functions_and_departmens",
+   "fieldtype": "Data",
+   "label": "Functions and Departmens"
+  },
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Heading",
+   "label": "Product Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "active_medical_device",
+   "fieldtype": "Check",
+   "label": "Active Medical Devices"
+  },
+  {
+   "default": "0",
+   "fieldname": "non_active_medical_device",
+   "fieldtype": "Check",
+   "label": "In Vitro Diagnostics - Non Active Medical Device"
+  },
+  {
+   "fieldname": "section_break_porz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tab_break_wjnj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.non_active_medical_device == 1",
+   "fieldname": "product_category_non_active",
+   "fieldtype": "Table MultiSelect",
+   "options": "Product Category List"
+  },
+  {
+   "depends_on": "eval:doc.active_medical_device == 1",
+   "fieldname": "product_category_active",
+   "fieldtype": "Table MultiSelect",
+   "label": "Product Category",
+   "options": "Product Category List"
+  },
+  {
+   "fieldname": "column_break_9rbq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tab_break_y1jt",
+   "fieldtype": "Tab Break",
+   "label": "Documentation Details"
+  },
+  {
+   "fieldname": "documentation_details",
+   "fieldtype": "Table",
+   "label": "Documentation Details",
+   "options": "Documentation Details"
+  },
+  {
+   "fieldname": "organization_chart_tab",
+   "fieldtype": "Tab Break",
+   "label": "Basic Settings"
+  },
+  {
+   "fieldname": "location_and_unit_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Location And Unit Details"
+  },
+  {
+   "fieldname": "manufacturing_unit_name",
+   "fieldtype": "Data",
+   "label": "Manufacturing Unit Name"
+  },
+  {
+   "fieldname": "manufacturing_market_name",
+   "fieldtype": "Select",
+   "label": "Manufacturing Market Name",
+   "options": "Details"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_f7lp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "address_of_unit",
+   "fieldtype": "Data",
+   "label": "Address of Unit"
+  },
+  {
+   "fieldname": "section_break_waje",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "roles_section",
+   "fieldtype": "Section Break",
+   "label": "Roles"
+  },
+  {
+   "fieldname": "regulations",
+   "fieldtype": "HTML",
+   "label": "Regulations"
+  },
+  {
+   "default": "0",
+   "fieldname": "select_country",
+   "fieldtype": "Link",
+   "label": "Select Country",
+   "options": "Location"
+  },
+  {
+   "fieldname": "section_break_7syd",
+   "fieldtype": "Section Break",
+   "label": "Regulation Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "india",
+   "fieldtype": "Check",
+   "label": "India"
+  },
+  {
+   "default": "0",
+   "fieldname": "usamerica",
+   "fieldtype": "Check",
+   "label": "USA"
+  },
+  {
+   "depends_on": "eval:doc.india == 1",
+   "fieldname": "indian_regulations",
+   "fieldtype": "HTML",
+   "label": "Indian Regulations",
+   "options": "<p><b>ISO 13485</b>\n</p><p> ISO 13485 is an international standard that specifies requirements for a quality management system (QMS) tailored to the medical devices industry.</p>\n\t <p> It is designed for organizations involved in the design, production, installation, and servicing of medical devices and related services. </p>\n\t <p>The primary purpose of ISO 13485 is to ensure that medical devices consistently meet both customer and regulatory requirements. </p>\n\t <p>This standard emphasizes the importance of maintaining an effective QMS, addressing risk management, and implementing stringent controls throughout the entire lifecycle of a medical device, from initial design to post-market surveillance.</p><p>\n\t  </p><p> By adhering to ISO 13485, organizations can enhance product safety, improve process efficiency, and ensure regulatory compliance, ultimately fostering greater trust and confidence in their medical devices.</p>\n\n<b>ISO 14971</b>\n<p>ISO 14971 is an international standard that provides a framework for the application of risk management to medical devices.</p>\n\t\t\t\t <p> It outlines the processes manufacturers should use to identify hazards associated with medical devices, estimate and evaluate the associated risks, control these risks, and monitor the effectiveness of the controls. </p>\n\t\t\t\t <p>The goal of ISO 14971 is to ensure that risks related to the use of medical devices are systematically identified and managed throughout the entire product lifecycle, from design and development through to production, distribution, and post-market activities. </p>\n\t\t\t\t <p>By implementing ISO 14971, manufacturers can enhance the safety and performance of their medical devices, comply with regulatory requirements, and improve overall patient safety. This standard is crucial for maintaining the high quality and reliability of medical devices in the healthcare industry.</p>"
+  },
+  {
+   "default": "0",
+   "fieldname": "brasil_",
+   "fieldtype": "Check",
+   "label": "Brasil"
+  },
+  {
+   "depends_on": "eval:doc.usamerica == 1",
+   "fieldname": "usa_regulations",
+   "fieldtype": "HTML",
+   "label": "USA Regulations",
+   "options": "<p>21 CFR Subchapter H</p>\n\n<p>21 CFR Subchapter H pertains to \"Medical Devices,\" outlining regulations that ensure the safety and effectiveness of medical devices in the U.S. </p>\n\t\t<p>It includes several key parts: Part 800 covers general provisions; </p>\n\t\t<p>Part 801 details labeling requirements; Part 803 focuses on medical device reporting; </p>\n\t\t<p>Part 804 addresses device tracking;</p>\n\t\t <p> Part 820 establishes quality system regulations. </p>\n\t\t <p>These regulations are essential for manufacturers to maintain compliance and ensure product safety in the medical device industry. Let me know if you need more specific information!</p>"
+  },
+  {
+   "depends_on": "eval:doc.brasil_==1",
+   "fieldname": "brasil_regulations",
+   "fieldtype": "HTML",
+   "label": "Brasil Regulations",
+   "options": "<p>ANVISA RDC 40/2015</p>\n\n<p>ANVISA RDC 40/2015 regulates the registration and commercialization of medical devices in Brazil, focusing on safety and efficacy. </p>\n\t\t<p>It establishes a classification system based on risk, outlines the registration process with required documentation, and emphasizes adherence to quality management systems aligned with international standards.</p>\n\t\t <p> Additionally, it mandates post-market surveillance to monitor device performance after commercialization. </p>\n\t\t<p>This regulation aims to ensure the quality and safety of medical devices in the Brazilian market.</p>"
+  },
+  {
+   "fieldname": "indian_regulation_chacklist_section",
+   "fieldtype": "Section Break",
+   "label": "Indian Regulation Checklist"
+  },
+  {
+   "fieldname": "website_link",
+   "fieldtype": "Data",
+   "label": "Website Link"
+  },
+  {
+   "fieldname": "cin",
+   "fieldtype": "Data",
+   "label": "CIN"
+  },
+  {
+   "fieldname": "manufacturing_license",
+   "fieldtype": "Data",
+   "label": "Manufacturing License"
+  },
+  {
+   "fieldname": "undertaking",
+   "fieldtype": "Data",
+   "label": "Undertaking"
+  },
+  {
+   "fieldname": "purpose_cdsco",
+   "fieldtype": "Data",
+   "label": "Purpose CDSCO"
+  },
+  {
+   "fieldname": "for_import_of_medical_device",
+   "fieldtype": "Data",
+   "label": "For Import of Medical Device"
+  },
+  {
+   "fieldname": "for_clinical_investigation_of_medical_device",
+   "fieldtype": "Data",
+   "label": "For Clinical Investigation of Medical Device"
+  },
+  {
+   "fieldname": "for_laboratory_registration",
+   "fieldtype": "Data",
+   "label": "For Laboratory Registration"
+  },
+  {
+   "fieldname": "column_break_rhup",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_oygj",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "attach_veig",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "attach_npuj",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "attach_tkif",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "attach_even",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "attach_yfsl",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "attach_clkc",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "attach_ghid",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "section_break_lpbh",
+   "fieldtype": "Section Break",
+   "label": "EU-AR"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "prrc",
+   "fieldtype": "Data",
+   "label": "PRRC"
+  },
+  {
+   "fieldname": "column_break_vh6o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "srn",
+   "fieldtype": "Data",
+   "label": "SRN"
+  },
+  {
+   "fieldname": "notified_body_section",
+   "fieldtype": "Section Break",
+   "label": "Notified Body"
+  },
+  {
+   "fieldname": "name_notified_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "address_notified_body",
+   "fieldtype": "Datetime",
+   "label": "Address"
+  },
+  {
+   "fieldname": "file_name",
+   "fieldtype": "Data",
+   "label": "File Name"
+  },
+  {
+   "fieldname": "column_break_fexp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_number_notified_body",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "email_notified_body",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "srn_notified_body",
+   "fieldtype": "Data",
+   "label": "SRN"
+  },
+  {
+   "fieldname": "capture_eudamed_registration_section",
+   "fieldtype": "Section Break",
+   "label": "Capture EUDAMED Registration"
+  },
+  {
+   "fieldname": "organization_eudamed_registration",
+   "fieldtype": "Data",
+   "label": "Organization EUDAMED Registration"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-17 16:20:36.671727",
+ "modified_by": "Administrator",
+ "module": "Medstrategist",
+ "name": "Organization",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
