@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../../../tmp/tmp-198122-8zr5QfJEjBX4/medstrategist/medstrategist/public/css/home.bundle.css"],
+  "sourcesContent": ["body { \n    /* font-family: 'Poppins', sans-serif !important; */\n    font-family: 'Roboto', sans-serif !important;\n    /* font-family: 'Times New Roman', sans-serif !important; */\n}\n.standard-sidebar-section.nested-container{\n    font-family: 'DM Sans', sans-serif;\n}"],
+  "mappings": ";AAAA;AAEI;AAAA;AAGJ;AACI;AAAA;",
+  "names": []
+}
