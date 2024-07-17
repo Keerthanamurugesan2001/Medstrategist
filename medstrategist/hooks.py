@@ -20,6 +20,10 @@ override_whitelisted_methods = {
 
 doctype_list_js = {"Vendors" : "public/js/vendor_list.js"}
 
+fixtures = [
+    "Custom Field",
+    "Workflow",
+]
 # app_include_css = "/assets/medstrategist/css/medstrategist.css"
 # app_include_js = "/assets/medstrategist/js/medstrategist.js"
 
