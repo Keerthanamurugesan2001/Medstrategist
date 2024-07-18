@@ -1,5 +1,4 @@
 {
- "_comments": "[{\"comment\": \"<div class=\\\"ql-editor read-mode\\\"><p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p></div>\", \"by\": \"Administrator\", \"name\": \"pn6pngh1o8\"}]",
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
@@ -243,8 +242,9 @@
   },
   {
    "fieldname": "functions_and_departmens",
-   "fieldtype": "Data",
-   "label": "Functions and Departmens"
+   "fieldtype": "Table",
+   "label": "Functions and Departmens",
+   "options": "Organization Function Department"
   },
   {
    "fieldname": "product_type",
@@ -577,7 +577,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-17 16:20:36.671727",
+ "modified": "2024-07-18 11:56:23.533936",
  "modified_by": "Administrator",
  "module": "Medstrategist",
  "name": "Organization",

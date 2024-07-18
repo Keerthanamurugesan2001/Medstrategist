@@ -6,22 +6,11 @@ frappe.ui.form.on("Organization", {
 
 	},
 
-    onload:function(frm) {
-        // if(frm.doc.india == 1){
-            
-        //     frappe.call({
-        //         method: "medstrategist.medstrategist.doctype.organization.organization.get_regulation_details",
-        //         args: {
-        //             country : "India",
-        //         },
-                
-        //         callback: function(response) {
-        //             debugger;
-        //             frm.set_value("indian_regulations", response.message['ISO 13485']);
-        //         }
-        //     });
-        // }
+    onload(frm) {
+        function_or_department_custom_fetch(frm);
     },
+
+
 
     select_country: function(frm) {
         // Get all doctypes
@@ -72,3 +61,14 @@ frappe.ui.form.on("Organization", {
         }
     }
 });
+
+function function_or_department_custom_fetch(frm) {
+    // let val = ["Induction Training"];
+
+    // val.forEach(function (d) {
+    //     let row = frm.add_child('custom_skill_set_and_training');
+    //     row.skill_set = d;
+    // });
+
+    // frm.refresh_field('custom_skill');
+}
