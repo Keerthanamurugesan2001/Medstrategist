@@ -4,9 +4,18 @@
 # import frappe
 from frappe.model.document import Document
 import frappe
+import json
+import os
 
 class Organization(Document):
-	pass
+	def validate(self):
+		file_path = frappe.get_site_path('public', 'files', 'organization.json')
+		data = {
+			self.owner: {}
+		}
+		with open(file_path, 'w') as json_file:
+			json.dump(data, json_file, indent=4)
+
 
 @frappe.whitelist()
 def get_all_regulations(select_country):
@@ -33,6 +42,36 @@ def get_regulations_by_location(country):
 """,as_dict=True)
 
 	return regulations
+
+@frappe.whitelist()
+def save_organization_data(doc):
+	doc = json.loads(doc)
+	file_path = frappe.get_site_path('public', 'files', 'organization.json')
+	doctype_fields = frappe.get_meta(doc.get("doctype")).fields
+	field_names = [field.fieldname for field in doctype_fields]
+
+	filtered_doc = {field: doc.get(field) for field in field_names if doc.get(field) is not None}
+	data = {
+		doc.get("owner"): filtered_doc
+	}
+	with open(file_path, 'w') as json_file:
+		json.dump(data, json_file, indent=4)
+	return {"status": "success", "file_path": file_path}
+
+@frappe.whitelist()
+def get_organization_detail(doc):
+	doc = json.loads(doc)
+	owner = doc.get("owner")
+	file_path = frappe.get_site_path('public', 'files', 'organization.json')
+	if os.path.exists(file_path):
+		with open(file_path, 'r') as json_file:
+			data = json.load(json_file)
+	else:
+		data = {}
+	if owner in data:
+		return data[owner]
+	return {}
+
 
 
 # @frappe.whitelist()

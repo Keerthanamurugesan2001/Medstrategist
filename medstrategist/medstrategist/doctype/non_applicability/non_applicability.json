@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-24 11:53:43.261171",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "non_applicability"
+ ],
+ "fields": [
+  {
+   "fieldname": "non_applicability",
+   "fieldtype": "Data",
+   "label": "non applicability"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-24 11:53:59.710229",
+ "modified_by": "Administrator",
+ "module": "Medstrategist",
+ "name": "Non Applicability",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

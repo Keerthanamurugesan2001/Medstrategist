@@ -5,6 +5,9 @@ frappe.ui.form.on("Vendors", {
     refresh(frm) {
         update_html_content(frm);
         update_add_category(frm);
+        if(frm.is_new()) {
+            frm.page.set_title('Add Vendors');
+        }
     },
     add_category(frm) {
         let doctype_name = frm.doc.doctype;

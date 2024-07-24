@@ -31,6 +31,8 @@
   "email_id",
   "contact",
   "send_invite",
+  "section_break_yyzb",
+  "next_company_profile",
   "product_details_tab",
   "product_type",
   "active_medical_device",
@@ -40,14 +42,20 @@
   "non_active_medical_device",
   "column_break_9rbq",
   "product_category_non_active",
+  "section_break_rxgu",
+  "next_product_detail",
   "tab_break_ttvz",
   "functions_and_departmens",
+  "section_break_jxib",
+  "next_function_and_department",
   "tab_break_y1jt",
   "documentation_details",
+  "section_break_xuor",
+  "next_documentaion_detail",
   "organization_chart_tab",
   "roles_section",
-  "select_country",
   "regulations",
+  "select_country",
   "section_break_7syd",
   "india",
   "indian_regulations",
@@ -91,6 +99,8 @@
   "srn_notified_body",
   "capture_eudamed_registration_section",
   "organization_eudamed_registration",
+  "section_break_gcfh",
+  "next_basic_setting",
   "location_and_unit_details_tab",
   "manufacturing_unit_name",
   "manufacturing_market_name",
@@ -233,7 +243,8 @@
   {
    "fieldname": "product_details_tab",
    "fieldtype": "Tab Break",
-   "label": "Product Details"
+   "label": "Product Details",
+   "read_only": 1
   },
   {
    "fieldname": "tab_break_ttvz",
@@ -355,13 +366,6 @@
    "label": "Regulations"
   },
   {
-   "default": "0",
-   "fieldname": "select_country",
-   "fieldtype": "Link",
-   "label": "Select Country",
-   "options": "Location"
-  },
-  {
    "fieldname": "section_break_7syd",
    "fieldtype": "Section Break",
    "label": "Regulation Details"
@@ -456,7 +460,8 @@
   },
   {
    "fieldname": "attach_oygj",
-   "fieldtype": "Attach"
+   "fieldtype": "Button",
+   "label": "Read only"
   },
   {
    "fieldname": "attach_veig",
@@ -573,11 +578,62 @@
    "fieldname": "organization_eudamed_registration",
    "fieldtype": "Data",
    "label": "Organization EUDAMED Registration"
+  },
+  {
+   "fieldname": "select_country",
+   "fieldtype": "Link",
+   "label": "Select Country",
+   "options": "Location"
+  },
+  {
+   "fieldname": "next_company_profile",
+   "fieldtype": "Button",
+   "label": "Next"
+  },
+  {
+   "fieldname": "section_break_yyzb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_rxgu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "next_product_detail",
+   "fieldtype": "Button",
+   "label": "Next"
+  },
+  {
+   "fieldname": "section_break_jxib",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "next_function_and_department",
+   "fieldtype": "Button",
+   "label": "Next"
+  },
+  {
+   "fieldname": "section_break_xuor",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "next_documentaion_detail",
+   "fieldtype": "Button",
+   "label": "Next"
+  },
+  {
+   "fieldname": "section_break_gcfh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "next_basic_setting",
+   "fieldtype": "Button",
+   "label": "Next"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-18 11:56:23.533936",
+ "modified": "2024-07-24 11:06:06.968555",
  "modified_by": "Administrator",
  "module": "Medstrategist",
  "name": "Organization",
